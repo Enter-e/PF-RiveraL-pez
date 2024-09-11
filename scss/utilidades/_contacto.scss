@@ -13,6 +13,8 @@
     margin-top: 100px;
     width: 1000px;
     height: 500px;
+    animation: fadeIn;
+    animation-duration: 2.5s;
 }
 
 .box-info{
@@ -47,6 +49,8 @@ form {
         letter-spacing: 1px;
         transition:.3s;
         color:#fff;
+        font-family:"Teko", sans-serif;
+        font-size: 18px;
     }
     textarea {
         width: 100%;
@@ -58,18 +62,24 @@ form {
         outline: none;
         transition:.3s;
         color:#fff;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
+        font-family:"Teko", sans-serif;
+        font-size: 18px;
     }
 
 i {
         position:absolute;
         top:50%;
+        font-size: 16px;
         transform: translateY(-50%);
         right: 10px;
         color:rgba(255 255 255 / .3);
         transition: .3s;
-    }
-    
+    } 
+}
+
+.input-box > input:focus ~ i {
+    color:crimson;
 }
 
 .input-box > input:focus,

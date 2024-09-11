@@ -15,6 +15,8 @@
   margin-top: 100px;
   width: 1000px;
   height: 500px;
+  animation: fadeIn;
+  animation-duration: 2.5s;
 }
 
 .box-info {
@@ -50,6 +52,8 @@ form {
   letter-spacing: 1px;
   transition: 0.3s;
   color: #fff;
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
 }
 .input-box textarea {
   width: 100%;
@@ -61,15 +65,22 @@ form {
   outline: none;
   transition: 0.3s;
   color: #fff;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
 }
 .input-box i {
   position: absolute;
   top: 50%;
+  font-size: 16px;
   transform: translateY(-50%);
   right: 10px;
   color: rgba(255, 255, 255, 0.3);
   transition: 0.3s;
+}
+
+.input-box > input:focus ~ i {
+  color: crimson;
 }
 
 .input-box > input:focus,
@@ -106,10 +117,22 @@ form {
 }
 
 body {
-  background-image: linear-gradient(180deg, #001011 0%, #001011 40%, #001011 60%, #485563 280%);
-  min-height: 100vh;
+  background: linear-gradient(45deg, #3f4852, #001011, #001011, #4e5864);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -225,6 +248,23 @@ h2 {
   color: white;
   margin-top: 20px;
   margin-bottom: -10px;
+}
+
+.segundo {
+  animation: fadeIn;
+  animation-duration: 2.5s;
+}
+
+.animate__animated.animate__fadeInRight {
+  --animation-duration: 5s;
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2s;
 }
 
 h3 {
