@@ -214,16 +214,10 @@ i {
 
 /* Footer */
 
-.containerfoot {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-
-}
-
 footer {
     width: 100%;
-  
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     padding: 5px 180px;
