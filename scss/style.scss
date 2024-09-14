@@ -17,6 +17,9 @@ body {
     background: linear-gradient(45deg,#3f4852,#001011,#001011, #4e5864);
     background-size: 400% 400%;
     animation: gradient 12s ease infinite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 @keyframes gradient {
@@ -52,7 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    margin:0 auto;
+    margin-bottom: auto;
     padding: 2rem 10rem;  
     background: rgba(255, 255, 255, 0.10);
     box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.10);
@@ -103,7 +106,7 @@ header {
     justify-content: center;
     align-items: start;
     min-height: 60vh;
-    margin: 190px auto;
+    margin: 100px auto;
     height: 3px;
     width: 100%;
     img {
@@ -193,8 +196,8 @@ p {
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: 300;
+    line-height: 30px;
     color: white;
-    margin: 50px 80px 50px 80px;
     @include flextitulos;
 }
 
@@ -216,13 +219,13 @@ i {
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    height: 45px;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5px 180px;
     background-image: linear-gradient(to top, #e2ebf0 100%,#cfd9df 50%);
-    margin-top: auto;
     p {
         color: #001011;
         font-family: "Montserrat", sans-serif;

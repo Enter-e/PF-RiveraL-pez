@@ -1,32 +1,34 @@
+
 .logosslider {
-    width: 55vw;
+    width: 80vw;
     height: auto;
     margin: auto;
     overflow: hidden;
     margin-top: 150px;
+    mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
     .slide-track{
         display: flex;
-        animation: scroll 40s linear infinite;
-        -webkit-animation: scroll 40s linear infinite;
-        width: calc(200px * 18);        
+        animation: scroll 80s linear infinite;
+        width: calc(200px * 54);   
+        @keyframes scroll { 
+            0% {
+                transform: translateX(0);
+            }
+        
+            100% {
+                transform: translateX(calc(-200px * 27));
+            }
+            
+        }     
     }
     .slide {
         width: 200px;
-        img {
-            width: 100%;
-        }
+        margin-right: 30px;
     }
 }
 
-@keyframes scroll { 
-    0% {
-        -webkit-animation: translateX(0);
-        transform: translateX(0);
+.slide {
+    img {
+        width: 100%;
     }
-
-    100% {
-        -webkit-animation: translateX(calc(-200 * 9));
-        transform: translateX(calc(-200 * 9));
-    }
-    
 }
