@@ -1,3 +1,4 @@
+
 .contactomain{
     display:flex;
     flex-direction: column;
@@ -79,12 +80,12 @@ i {
 }
 
 .input-box > input:focus ~ i {
-    color:crimson;
+    color:#FB3640;
 }
 
 .input-box > input:focus,
 .input-box > textarea:focus {
-    border-bottom:3px solid crimson;
+    border-bottom:3px solid #FB3640;
     animation: shake .2s;
 }
 

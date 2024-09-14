@@ -7,6 +7,8 @@
 
 /* sin parametros */
 
-@mixin flex {
-    
+@mixin flextitulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }

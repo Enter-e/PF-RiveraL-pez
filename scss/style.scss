@@ -4,7 +4,8 @@
 @import "utilidades/variables";
 @import "utilidades/mixin";
 @import "utilidades/extend";
-@import "utilidades/contacto"; 
+@import "utilidades/contacto";
+@import "utilidades/mediaquery";
 
 *{
     margin: 0;
@@ -150,19 +151,26 @@ h2 {
     margin-bottom: -10px;
 }
 
-.segundo{
+.hola {
+    animation: fadeInDown;
+    animation-duration: 0.8s;
+}
+
+.segundo {
     animation: fadeIn;
-    animation-duration: 2.5s;
+    animation-duration: 2.8s;
 }
 
 .animate__animated.animate__fadeInRight{
-    --animation-duration: 5s;
+    --animation-duration: 6s;
 }
 .animate__animated.animate__fadeInDown{
     --animate-duration: 1s;
 }
-.animate__animated.animate__fadeIn {
-    --animate-duration: 2s;
+.titulos {
+    @include flextitulos;
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 
 h3 {
@@ -186,7 +194,8 @@ p {
     font-size: 2rem;
     font-weight: 300;
     color: white;
-    margin-bottom: 10px;
+    margin: 50px 80px 50px 80px;
+    @include flextitulos;
 }
 
 .logos {
@@ -205,10 +214,16 @@ i {
 
 /* Footer */
 
+.containerfoot {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
+  
     display: flex;
     justify-content: space-between;
     padding: 5px 180px;

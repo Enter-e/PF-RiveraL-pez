@@ -1,0 +1,32 @@
+.logosslider {
+    width: 55vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 150px;
+    .slide-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 18);        
+    }
+    .slide {
+        width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@keyframes scroll { 
+    0% {
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-animation: translateX(calc(-200 * 9));
+        transform: translateX(calc(-200 * 9));
+    }
+    
+}
